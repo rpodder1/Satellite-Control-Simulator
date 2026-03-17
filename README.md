@@ -2,7 +2,7 @@
 
 ![Attitude Control Demo](animated_attitude.gif)
 
-A physics-accurate spacecraft attitude control simulator built from scratch in Python. Models rigid body rotational dynamics, environmental disturbance torques, and a PID controller driving a satellite to a mission-specific pointing attitude — targeting the [Mammoth Solar Project](https://mammothsolar.com/) in Starke County, Indiana with a deployable mirror reflector.
+A physics-accurate spacecraft attitude control simulator built from scratch in Python. Models rigid body rotational dynamics, environmental disturbance torques, and a PID controller driving a satellite to a mission-specific pointing attitude — targeting the [Mammoth Solar Project](https://en.wikipedia.org/wiki/Mammoth_Solar) in Starke County, Indiana with a deployable mirror reflector.
 
 ---
 
