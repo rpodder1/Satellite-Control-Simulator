@@ -2,7 +2,7 @@
 
 ![Attitude Control Demo](animated_attitude.gif)
 
-A physics-accurate spacecraft attitude control simulator built from scratch in Python. Models rigid body rotational dynamics, environmental disturbance torques, and a PID controller driving a satellite to a mission-specific pointing attitude — targeting the [Mammoth Solar Project](https://en.wikipedia.org/wiki/Mammoth_Solar) in Starke County, Indiana with a deployable mirror reflector.
+A physics-accurate spacecraft attitude control simulator built from scratch in Python. Models rigid body rotational dynamics, environmental disturbance torques, and a PID controller driving a satellite to a mission-specific pointing attitude — targeting the [Mammoth Solar Project](https://en.wikipedia.org/wiki/Mammoth_Solar) in Starke County, Indiana, with a deployable mirror reflector.
 
 ---
 
@@ -30,7 +30,7 @@ Both are integrated with a 4th-order Runge-Kutta (RK4) scheme. Attitude is repre
 | Mirror area | 50 m² |
 | Orbital altitude | 500 km LEO |
 | Initial pointing error | 45° |
-| Settling time (< 1°) | ~19 s |
+| Settling time (< 1°) | ~140 s |
 | Final pointing error | < 1° |
 | Controller | PID with anti-windup + integrator deadband |
 
@@ -48,7 +48,7 @@ $$\tau_{SRP} = \frac{\Phi}{c} \cdot C_r \cdot A \cdot \cos\theta \cdot d_{CoP}$$
 
 With a 50 m² mirror and 30 cm CoM–CoP offset this produces ~12 mN·m — the primary load the controller fights.
 
-**Gravity gradient** — differential gravitational pull across an elongated body. Tries to align the minimum inertia axis with local vertical. Scales as $3\mu / 2r^3$.
+**Gravity gradient** — differential gravitational pull across an elongated body. Tries to align the minimum inertia axis with the local vertical. Scales as $3\mu / 2r^3$.
 
 **Magnetic disturbance** — residual onboard dipole moment interacting with Earth's field via $\tau = m \times B$.
 
